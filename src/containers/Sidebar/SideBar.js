@@ -1,7 +1,8 @@
 import React from "react";
 import SideBarItem  from "./SideBarItem/SideBarItem";
 import SideBarHeader  from "./SideBarHeader/SideBarHeader";
-import Subscriptions from './Subscriptions/Subscriptions'
+import Subscriptions from './Subscriptions/Subscriptions';
+import SideBarFooter from './SideBarFooter/SideBarFooter';
 import { Menu, Divider } from "semantic-ui-react";
 import "./SideBar.scss";
 
@@ -30,6 +31,8 @@ export default class SideBar extends React.Component {
                <SideBarItem label="Report history" icon="flag" />
                <SideBarItem label="Help" icon="help circle" />
                <SideBarItem label="Send feedback" icon="comment" />
+               <Divider/>
+               <SideBarFooter/>
              </Menu>
            );
          }
