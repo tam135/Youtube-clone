@@ -3,7 +3,7 @@ import { Icon, Image, Menu } from 'semantic-ui-react';
 import './Subscription.scss';
 
 
-export default function Subscription() {
+export default function Subscription(props) {
     
     let rightElement = null;
     const { broadcasting, amountNewVideos } = props;
@@ -16,8 +16,14 @@ export default function Subscription() {
 
 
     return (
-        <Menu.item>
-
-        </Menu.item>
-    )
+      <Menu.item>
+        <div className="subscription">
+          <div>
+            <Image src="http://via.placeholder.com/28x28" avatar />
+            <span>{props.label}</span>
+          </div>
+          {rightElement}
+        </div>
+      </Menu.item>
+    );
 }
