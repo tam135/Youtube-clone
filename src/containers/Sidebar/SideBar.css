@@ -5,8 +5,10 @@
   padding-bottom: 64px;
 }
 
-.ui.menu.fixed.side-nav .sidebar-item:hover {
+.ui.menu.fixed.side-nav .sidebar-item:hover,
+.ui.menu.fixed.side-nav .item:hover {
   background: #ebebeb;
+  cursor: pointer;
 }
 
 .side-nav.ui.vertical.menu {

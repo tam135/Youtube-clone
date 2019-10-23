@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,cAAc,EAAE,IAAI;EACpB,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,OAAO;CACjB",
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,cAAc,EAAE,IAAI;EACpB,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,aAAa,CAAC;EACV,YAAY,EAAE,IAAI;CACrB",
     "sources": [
         "SideBarFooter.scss"
     ],
