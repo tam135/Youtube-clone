@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "SideBarHeader.scss"
+    ],
+    "names": [],
+    "file": "SideBarHeader.css"
+}
