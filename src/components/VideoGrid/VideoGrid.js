@@ -9,7 +9,7 @@ export default function VideoGrid(props) {
 
     return (
       <>
-        <h4>Trending</h4>
+        <VideoGridHeader title='trending'/>
         <div className="video-grid">
           <VideoPreview />
           <VideoPreview />
