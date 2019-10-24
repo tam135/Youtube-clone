@@ -10,7 +10,9 @@ export class HeaderNav extends React.Component {
       <Menu borderless className="top-menu" fixed="top">
         {/* 2 */}
         <Menu.Item header className="logo">
-          <Image src={logo} size="large"/>
+          <a href="">
+            <Image src={logo} size="large" />
+          </a>
         </Menu.Item>
         {/* 3 */}
         <Menu.Menu className="header-container">

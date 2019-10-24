@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACF,UAAU,ECDM,IAAI;EDEpB,WAAW,ECDM,KAAK;CDEzB",
+    "sources": [
+        "Home.scss",
+        "../../styles/shared.scss"
+    ],
+    "names": [],
+    "file": "Home.css"
+}

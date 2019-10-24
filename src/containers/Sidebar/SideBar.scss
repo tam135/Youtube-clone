@@ -17,3 +17,9 @@
   width: 17rem;
   overflow-y: scroll;
 }
+
+@media only screen and (max-width: 500px) {
+  .side-nav.ui.vertical.menu {
+    display: none;
+  }
+}

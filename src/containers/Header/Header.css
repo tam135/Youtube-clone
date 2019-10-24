@@ -25,4 +25,8 @@
 .ui.menu.top-menu .header-icon {
   color: #a0a0a0;
 }
+
+.ui.menu.top-menu .header-icon:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=Header.css.map */

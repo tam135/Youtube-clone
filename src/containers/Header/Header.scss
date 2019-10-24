@@ -1,4 +1,4 @@
-@import 'styles/shared.scss';
+@import '../../styles/shared.scss';
 
 .ui.menu.top-menu {
   border: none;
@@ -21,6 +21,11 @@
 
   .header-icon {
     color: #a0a0a0;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
+
 }
 
