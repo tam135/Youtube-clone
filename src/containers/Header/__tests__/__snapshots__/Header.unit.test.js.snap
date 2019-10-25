@@ -10,12 +10,16 @@ exports[`renders Header 1`] = `
     className="logo"
     header={true}
   >
-    <Image
-      as="img"
-      size="large"
-      src="youtubelogo.png"
-      ui={true}
-    />
+    <Link
+      to="/"
+    >
+      <Image
+        as="img"
+        size="large"
+        src="youtubelogo.png"
+        ui={true}
+      />
+    </Link>
   </MenuItem>
   <MenuMenu
     className="header-container"
