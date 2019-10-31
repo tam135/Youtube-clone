@@ -1,4 +1,5 @@
-import React from 'react'
+import apiReducer from './api';
+import {combineReducers} from 'redux';
 
 export default function index(state={}, action) {
     switch(action.type) {
@@ -6,3 +7,7 @@ export default function index(state={}, action) {
             return state;
     }
 }
+
+export default combineReducers({
+  api: apiReducer,
+});
