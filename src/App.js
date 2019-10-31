@@ -5,12 +5,12 @@ import {Route, Switch} from 'react-router-dom';
 import Watch from './containers/Watch/Watch';
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import youtubeLibraryLoaded  from "./store/actions/api";
+import { youtubeLibraryLoaded } from "./store/actions/api";
 
 
 const API_KEY = 'AIzaSyAEjX-1XvfJ0QHLTD1jnpYX70dMUl2tX_E'
 
-export default class App extends Component {
+export class App extends Component {
   render() {
     return (
       <Layout>

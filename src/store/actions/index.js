@@ -1,5 +1,5 @@
 
-export default function createAction(type, payload = {}) {
+export function createAction(type, payload = {}) {
   return {
     type,
     ...payload
