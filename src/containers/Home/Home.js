@@ -8,32 +8,33 @@ import {getYoutubeLibraryLoaded} from '../../store/reducers/api';
 import HomeContent from './HomeContent/HomeContent'
 import SideBar from '../Sidebar/SideBar';
 
-
-
 class Home extends Component {
-
-    componentDidMount() {
-      if (this.props.getYoutubeLibraryLoaded) {
-        this.props.fetchMostPopularVideos();
-      }
+  
+  componentDidMount() {
+    if (this.props.youtubeLibraryLoaded) {
+      this.fetchCategoriesAndMostPopularVideos();
     }
+  }
 
-    componentDidUpdate(prevProps){
-      if (this.props.youtubeLibraryLoaded !== prevProps.youtubeLibraryLoaded) {
-        this.props.fetchMostPopularVideos();
-      }
+  componentDidUpdate(prevProps) {
+    if (this.props.youtubeLibraryLoaded !== prevProps.youtubeLibraryLoaded) {
+      this.fetchCategoriesAndMostPopularVideos();
     }
+  }
 
+  fetchCategoriesAndMostPopularVideos() {
+    this.props.fetchMostPopularVideos();
+    this.props.fetchVideoCategories();
+  }
 
-    render() {
-        return (
-          <>
-            <SideBar/>
-            <HomeContent/>
-          </>
-        );
-    }
-    
+  render() {
+    return (
+      <>
+        <SideBar />
+        <HomeContent />
+      </>
+    );
+  }
 }
 
 function mapStateToProps(state) {
@@ -44,7 +45,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   const fetchMostPopularVideos = videoActions.mostPopular.request;
-  return bindActionCreators({fetchMostPopularVideos}, dispatch);
+  const fetchVideoCategories = videoActions.categories.request;
+  return bindActionCreators({fetchMostPopularVideos, fetchVideoCategories}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
