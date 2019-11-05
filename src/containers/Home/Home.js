@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import *  as videoActions from '../../store/actions/video'
 import {bindActionCreators} from 'redux';
 import {getYoutubeLibraryLoaded} from '../../store/reducers/api';
-import { getVideoCategoryIds } from "../../store/reducers/video";
+import { getVideoCategoryIds, videoCategoriesLoaded, videosByCategoryLoaded } from "../../store/reducers/video";
 import HomeContent from './HomeContent/HomeContent'
 import SideBar from '../Sidebar/SideBar';
 
@@ -49,11 +49,28 @@ class Home extends Component {
     });
   }
 
+  bottomReachedCallback = () => {
+    if (!this.props.videoCategoriesLoaded) {
+      return;
+    }
+    this.fetchVideosByCategory();
+  };
+
+  shouldShowLoader() {
+    if (this.props.videoCategoriesLoaded && this.props.videosByCategoryLoaded) {
+      return this.state.categoryIndex < this.props.videoCategories.length;
+    }
+    return false;
+  }
+
   render() {
     return (
       <>
         <SideBar />
-        <HomeContent />
+        <HomeContent
+          bottomReachedCallback={this.bottomReachedCallback}
+          showLoader={this.shouldShowLoader}
+        />
       </>
     );
   }
@@ -62,7 +79,9 @@ class Home extends Component {
 function mapStateToProps(state) {
   return {
     youtubeLibraryLoaded: getYoutubeLibraryLoaded(state),
-    videoCategories: getVideoCategoryIds(state)
+    videoCategories: getVideoCategoryIds(state),
+    videoCategoriesLoaded: videoCategoriesLoaded(state),
+    videosByCategoryLoaded: videosByCategoryLoaded(state)
   };
 }
 
