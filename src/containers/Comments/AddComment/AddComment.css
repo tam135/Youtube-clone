@@ -1,0 +1,20 @@
+.add-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.add-comment form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.add-comment .user-image {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=AddComment.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CAWpB;;AAdD,AAKE,YALU,CAKV,IAAI,CAAC;EACH,IAAI,EAAE,CAAC;CACR;;AAPH,AASE,YATU,CASV,WAAW,CAAC;EACV,KAAK,ECPS,IAAI;EDQlB,MAAM,ECRQ,IAAI;EDSlB,YAAY,ECRA,IAAI;CDSjB",
+    "sources": [
+        "AddComment.scss",
+        "../../../styles/shared.scss"
+    ],
+    "names": [],
+    "file": "AddComment.css"
+}

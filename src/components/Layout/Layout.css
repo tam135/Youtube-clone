@@ -1,0 +1,8 @@
+.layout > *:not(:first-child) {
+  margin-top: 64px;
+}
+
+.layout ::-webkit-scrollbar {
+  width: 6px;
+}
+/*# sourceMappingURL=Layout.css.map */

@@ -4,6 +4,20 @@
   grid: 118px auto / 210px;
 }
 
+.video-preview.horizontal {
+  grid: auto / 210px auto;
+  grid-column-gap: 4px;
+}
+
+.video-preview.horizontal .video-info {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
 .video-info {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
