@@ -182,3 +182,7 @@ function reduceWatchDetails(responses, prevState) {
     }
   };
 }
+
+export const getVideoById = (state, videoId) => {
+  return state.videos.byId[videoId];
+};
