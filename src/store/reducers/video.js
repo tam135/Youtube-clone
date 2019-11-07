@@ -4,6 +4,7 @@ import {createSelector} from 'reselect';
 import { VIDEO_LIST_RESPONSE } from "../api/youtube-api-response-types";
 import { VIDEO_DETAILS, WATCH_DETAILS } from "../actions/watch";
 import {SEARCH_LIST_RESPONSE} from '../api/youtube-api-response-types'
+import {getSearchParam} from '../../services/url/index'
 
 const initialState = {
     byId: {},
@@ -249,3 +250,12 @@ export const getRelatedVideos = createSelector(
     return [];
   }
 );
+
+export const getChannelId = (state, location, name) => {
+  const videoId = getSearchParam(location, name);
+  const video = state.videos.byId[videoId];
+  if (video) {
+    return video.snippet.channelId;
+  }
+  return null;
+};
