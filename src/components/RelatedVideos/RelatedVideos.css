@@ -1,8 +1,4 @@
-.related-videos {
-  max-width: 402px;
-}
-
-.related-videos > * {
-  margin-top: 4px;
+.related-videos a > div {
+  margin-top: 8px;
 }
 /*# sourceMappingURL=RelatedVideos.css.map */

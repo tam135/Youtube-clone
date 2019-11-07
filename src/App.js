@@ -15,12 +15,14 @@ export class App extends Component {
     return (
       <Layout>
         <Switch>
-          <Route path='/watch' component={Watch}/>
-          <Route exact path='/' component={Home}/>
+          <Route
+            path="/watch"
+            render={() => <Watch key={this.props.location.key} />}
+          />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Layout>
-
-    )
+    );
   }
 
   componentDidMount() {
