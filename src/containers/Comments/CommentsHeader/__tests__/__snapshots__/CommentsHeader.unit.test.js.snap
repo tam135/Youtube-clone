@@ -19,7 +19,7 @@ exports[`CommentsHeader CommentsHeader renders with props.amountComments = 0 1`]
       as="i"
       name="align left"
     />
-    Sort By
+    Sort by
   </Button>
 </div>
 `;
@@ -42,7 +42,7 @@ exports[`CommentsHeader CommentsHeader renders with props.amountComments = null 
       as="i"
       name="align left"
     />
-    Sort By
+    Sort by
   </Button>
 </div>
 `;

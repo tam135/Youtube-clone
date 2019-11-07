@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,UAAU;EACvB,eAAe,EAAE,aAAa;CAUjC;;AAbD,AAKI,kBALc,CAKd,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CAKtB;;AAZL,AASQ,kBATU,CAKd,eAAe,CAIX,IAAI,CAAC;EACD,YAAY,EAAE,IAAI;CACrB",
-    "sources": [
-        "NextUpVideo.scss"
-    ],
-    "names": [],
-    "file": "NextUpVideo.css"
-}

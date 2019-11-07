@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import AddComment from '../AddComment';
+import {AddComment} from '../AddComment';
 
 describe('AddComment', () => {
   test('AddComment renders correctly', () => {

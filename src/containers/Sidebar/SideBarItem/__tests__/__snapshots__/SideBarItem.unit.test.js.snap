@@ -1,86 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SideBarItem render non-highlighted SideBarItem that navigates to /feed/trending 1`] = `
-<MenuItem
-  className="sidebar-item "
+exports[`SideBarItem Render non-highlighted SideBarItem 1`] = `
+<Link
+  replace={false}
+  to={
+    Object {
+      "pathname": undefined,
+    }
+  }
 >
-  <div
-    className="sidebar-item-alignment-container"
+  <MenuItem
+    className="sidebar-item "
   >
-    <span>
-      <Icon
-        as="i"
-        name="fire"
-        size="large"
-      />
-       
-    </span>
-    <span>
-      trending
-    </span>
-  </div>
-</MenuItem>
+    <div
+      className="sidebar-item-alignment-container"
+    >
+      <span>
+        <Icon
+          as="i"
+          name="fire"
+          size="large"
+        />
+         
+      </span>
+      <span>
+        Trending
+      </span>
+    </div>
+  </MenuItem>
+</Link>
 `;
 
-exports[`SideBarItem renders empty SideBarItem 1`] = `
-<MenuItem
-  className="sidebar-item "
+exports[`SideBarItem Renders SideBarItem without path 1`] = `
+<Link
+  replace={false}
+  to={
+    Object {
+      "pathname": undefined,
+    }
+  }
 >
-  <div
-    className="sidebar-item-alignment-container"
+  <MenuItem
+    className="sidebar-item "
   >
-    <span>
-      <Icon
-        as="i"
-        size="large"
-      />
-       
-    </span>
-    <span />
-  </div>
-</MenuItem>
+    <div
+      className="sidebar-item-alignment-container"
+    >
+      <span>
+        <Icon
+          as="i"
+          size="large"
+        />
+         
+      </span>
+      <span />
+    </div>
+  </MenuItem>
+</Link>
 `;
 
-exports[`SideBarItem renders highlighted SideBarItem that navigates to /feed/trending 1`] = `
-<MenuItem
-  className="sidebar-item "
+exports[`SideBarItem Renders highlighted SideBarItem 1`] = `
+<Link
+  replace={false}
+  to={
+    Object {
+      "pathname": "/feed/trending",
+    }
+  }
 >
-  <div
-    className="sidebar-item-alignment-container"
+  <MenuItem
+    className="sidebar-item highlight-item"
   >
-    <span>
-      <Icon
-        as="i"
-        name="fire"
-        size="large"
-      />
-       
-    </span>
-    <span>
-      Trending
-    </span>
-  </div>
-</MenuItem>
-`;
-
-exports[`SideBarItem renders highlighted SideBarItem with no navigation 1`] = `
-<MenuItem
-  className="sidebar-item "
->
-  <div
-    className="sidebar-item-alignment-container"
-  >
-    <span>
-      <Icon
-        as="i"
-        name="fire"
-        size="large"
-      />
-       
-    </span>
-    <span>
-      Trending
-    </span>
-  </div>
-</MenuItem>
+    <div
+      className="sidebar-item-alignment-container"
+    >
+      <span>
+        <Icon
+          as="i"
+          name="fire"
+          size="large"
+        />
+         
+      </span>
+      <span>
+        Trending
+      </span>
+    </div>
+  </MenuItem>
+</Link>
 `;

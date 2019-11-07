@@ -1,16 +1,15 @@
-import React from "react";
-import {Waypoint} from "react-waypoint";
+import React from 'react';
+import {Waypoint} from 'react-waypoint';
+import {Loader} from 'semantic-ui-react';
+import './InfiniteScroll.scss';
 
-import { Loader } from "semantic-ui-react";
-import "./InfiniteScroll.scss";
-
-export default function InfiniteScroll(props) {
+export function InfiniteScroll(props) {
   return (
     <React.Fragment>
       {props.children}
       <Waypoint onEnter={props.bottomReachedCallback}>
-        <div className="loader-container">
-          <Loader active={props.showLoader} inline="centered" />
+        <div className='loader-container'>
+          <Loader active={props.showLoader} inline='centered' />
         </div>
       </Waypoint>
     </React.Fragment>

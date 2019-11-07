@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Comments from '../Comments';
+import {Comments} from '../Comments';
 
 describe('Comments', () => {
   test('renders without props', () => {
@@ -17,3 +17,4 @@ describe('Comments', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
+

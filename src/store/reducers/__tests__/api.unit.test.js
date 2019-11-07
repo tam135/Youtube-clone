@@ -1,8 +1,8 @@
-import apiReducer from "../api";
-import { YOUTUBE_LIBRARY_LOADED } from "../../actions/api";
+import apiReducer from '../api';
+import {YOUTUBE_LIBRARY_LOADED} from '../../actions/api';
 
 const initialState = {
-  libraryLoaded: false
+  libraryLoaded: false,
 };
 
 describe('api reducer', () => {

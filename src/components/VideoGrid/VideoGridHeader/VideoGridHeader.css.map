@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,kBAAkB,CAAC;EACjB,cAAc,EAAE,IAAI;EACpB,WAAW,EAAE,IAAI;CAKlB;;AAPD,AAGE,kBAHgB,CAGhB,MAAM,CAAC;EACL,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;CAClB",
-    "sources": [
-        "VideoGridHeader.scss"
-    ],
-    "names": [],
-    "file": "VideoGridHeader.css"
-}

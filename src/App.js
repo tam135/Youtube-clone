@@ -1,35 +1,33 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react';
 import Home from './containers/Home/Home';
-import Layout from './components/Layout/Layout';
+import {AppLayout} from './components/AppLayout/AppLayout';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import Watch from './containers/Watch/Watch';
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
-import { youtubeLibraryLoaded } from "./store/actions/api";
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {youtubeLibraryLoaded} from './store/actions/api';
+import Trending from './containers/Trending/Trending';
+import Search from './containers/Search/Search';
 
+const API_KEY = 'AIzaSyCxktRGg91_jqMOJH4eiN5IVDJiEEUuDtM';
 
-const API_KEY = 'AIzaSyAEjX-1XvfJ0QHLTD1jnpYX70dMUl2tX_E'
-
-export class App extends Component {
+class App extends Component {
   render() {
     return (
-      <Layout>
+      <AppLayout>
         <Switch>
-          <Route
-            path="/watch"
-            render={() => <Watch key={this.props.location.key} />}
-          />
-          <Route exact path="/" component={Home} />
+          <Route path="/feed/trending" component={Trending}/>
+          <Route path="/results" render={() => <Search key={this.props.location.key}/>}/>
+          <Route path="/watch" render={() => <Watch key={this.props.location.key}/>}/>
+          <Route path="/" component={Home}/>
         </Switch>
-      </Layout>
+      </AppLayout>
     );
   }
-
   componentDidMount() {
     this.loadYoutubeApi();
   }
 
-  // attaching Youtube's JS library script to handle authentication / access personal user data
   loadYoutubeApi() {
     const script = document.createElement("script");
     script.src = "https://apis.google.com/js/client.js";
@@ -42,6 +40,7 @@ export class App extends Component {
         });
       });
     };
+
     document.body.appendChild(script);
   }
 }

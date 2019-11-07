@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import CommentsHeader from '../CommentsHeader';
+import {CommentsHeader} from '../CommentsHeader';
 
 describe('CommentsHeader', () => {
   test('CommentsHeader renders with props.amountComments = null', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import VideoMetadata from '../VideoMetadata';
+import {VideoMetadata} from '../VideoMetadata';
 
 describe('VideoMetadata', () => {
   test('renders without props', () => {
@@ -8,7 +8,7 @@ describe('VideoMetadata', () => {
     expect(wrapper).toMatchSnapshot();
   });
   test('renders with view count', () => {
-    const wrapper = shallow(<VideoMetadata viewCount={100234}/>);
+    const wrapper = shallow(<VideoMetadata viewCount ={100234}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });
