@@ -8,8 +8,9 @@ import {connect} from 'react-redux';
 import {youtubeLibraryLoaded} from './store/actions/api';
 import Trending from './containers/Trending/Trending';
 import Search from './containers/Search/Search';
+import config from "./config";
 
-const API_KEY = 'AIzaSyCxktRGg91_jqMOJH4eiN5IVDJiEEUuDtM';
+const API_KEY = config.API_KEY;
 
 class App extends Component {
   render() {
