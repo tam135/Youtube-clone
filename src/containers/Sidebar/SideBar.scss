@@ -11,9 +11,11 @@ $sidebar-hover-color: #ebebeb;
     background: $sidebar-hover-color;
   }
 
-  .subscription:hover {
-    background: #ebebeb;
-    cursor: pointer;
+  .item{
+    &:hover {
+      cursor: pointer;
+      background: #ebebeb;
+    }
   }
 }
 

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,cAAc,EAAE,IAAI;EACpB,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,OAAO;CACf",
+    "sources": [
+        "SideBarFooter.scss"
+    ],
+    "names": [],
+    "file": "SideBarFooter.css"
+}

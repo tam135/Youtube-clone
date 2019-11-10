@@ -1,0 +1,23 @@
+.rating {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid: auto auto / -webkit-max-content -webkit-max-content;
+  grid: auto auto / max-content max-content;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  grid-row-gap: 4px;
+}
+
+.rating .progress.ui.progress:last-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.rating .progress.ui.progress:last-child.ui.progress:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=Rating.css.map */

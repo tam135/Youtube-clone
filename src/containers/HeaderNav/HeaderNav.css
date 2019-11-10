@@ -1,0 +1,33 @@
+.ui.menu.top-menu {
+  border: none;
+}
+
+.ui.menu.top-menu .logo {
+  width: 150px;
+}
+
+.ui.menu.top-menu .nav-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+}
+
+.ui.menu.top-menu .nav-container .search-input {
+  padding-left: 0;
+  width: 33%;
+  margin-left: 75px;
+}
+
+.ui.menu.top-menu .nav-container .search-input form {
+  width: 100%;
+}
+
+.ui.menu.top-menu .header-icon {
+  color: #a0a0a0;
+}
+
+.ui.menu.top-menu .header-icon:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=HeaderNav.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACG,eADY,CACZ,CAAC,GAAG,GAAG,CAAC;EACP,UAAU,EAAE,GAAG;CAChB",
+    "sources": [
+        "RelatedVideos.scss"
+    ],
+    "names": [],
+    "file": "RelatedVideos.css"
+}
